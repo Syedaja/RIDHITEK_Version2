@@ -1,0 +1,107 @@
+[   "//1 Header",
+    {
+      "Home":"Home",
+      "Services": "Services",
+      "AboutUs":"About Us",
+      "ContactUs":"Contact Us"
+    },
+    "//3 Home Page",
+    {
+      "Molding":"Molding",
+      "Enterprises":"Enterprises",
+      "ThroughTech":"Through Tech",
+      "Mastery":"Mastery",
+      "AtRidhitek":"At Ridhitek",
+      "GetStarted":"Get Started",
+      "Financial":"Financial",
+      "Sector":"Sector",
+      "FinancialContent":"Financial Tech Mastery is your gateway to unparalleled expertise in the dynamic realm of fintech. Our platform offers cutting-edge tools and insights crafted by industry leaders, empowering you to navigate the complexities.",
+      "UPIRelated":"UPI Related",
+      "UPIRelatedContent":"UPI Tech Mastery unlocks the power of Unified Payments Interface (UPI) through unparalleled expertise and innovation. Our platform equips you with advanced tools and insights tailored to navigate the intricacies of UPI technology with ease.",
+      "Pay":"Payments"
+    },
+    "// 5 Domains",
+    {
+       "Domains":"Domains",
+       "DomainsHedaContent":"Digital transformation in IT services refers to the integration of digital technology into all aspects of a business, fundamentally changing how it operates and delivers value to customers.",
+       "Payments":"Payments",
+       "Cards":"Cards",
+       "CoreBanking":"Core Banking",
+       "PaymentsContent":"Driving Payments industry transformation, our IT services integrate seamlessly with global standards, delivering innovative solutions that anticipate market shifts and customer needs.",
+       "CardsContent":"A credit card allows the cardholder to borrow funds from the card issuer upto a certain credit limit to make purchases.Cardholders are required to repay the borrowed amount along with any accrued.",
+       "CoreBankingContent":"Core banking systems manage customer accounts, including savings accounts, current accounts, loans, and other financial products. They maintain detailed records of account balances, transactions."
+    },
+     "// 7 Our Services",
+    {    "OSer":"Our Services",
+        "ADev":"Application",
+        "FEDevelopment":"Front End ",
+        "Development":"Development",
+        "Qua":"Quality",
+        "Assurance":"Assurance",
+        "APIDev":"API",
+        "DevOps":"DevOps"
+    },
+    "// 9 Specialization",
+    {
+        "Specialization":"Specialization",
+        "SpecializationHeadContent":"Banking and Financial Services industry is transitioning through interesting times that are marked by evolving customer expectations, hyper-personalized engagements and strategically relevant products and services. Time has come for Banking 4.X – a boundary busting era in which banking is embedded into customers lifetime experiences and made invisible.",
+        "Postilion":"Postilion",
+        "Wavemaker":"Wavemaker",
+        "VisionPLUS":"VisionPLUS®",
+        "PostilionCotent":"Developed by S1 Corporation (now part of ACI Worldwide), this widely used finance system manages transactions and orchestrates financial activities across multiple channels, including transaction authorization.",
+        "WavemakerContent":"WaveMaker is a RAD platform which simplifies app development with visual UI design and pre-built components for web and mobile applications, minimizing manual coding.",
+        "VisionPLUSContent":"VisionPLUS offers financial institutions the flexibility to configure their own product features and functionality. It is a family of totally integrated software products. VisionPLUS consists of modules that work together."
+
+    },
+    "// 11 About Us",
+    {
+     "AboutHead":"Focused Specialist",
+     "AboutSubHead":" Technology Services",
+     "AboutContent":"At RidhiTek, our core mission is unwavering to make a lasting, positive impact."
+    },
+    "// 13 Overview ",
+    {
+     "Overview":"Overview",
+     "OverviewContent1":"In today's constantly evolving world, many organizations find it challenging to adapt to the demands of the digital era. Traditional methods often prove inadequate in meeting the struggles posed by technological advancements, hindering growth and efficiency. Without the necessary expertise and resources, businesses risk falling behind competitors and failing to capitalize on emerging opportunities.",
+     "OverviewContent2":"RidhiTek recognizes the pressing need for businesses to undergo digital transformation to stay relevant and competitive. Founded by industry specialists in 2024 with extensive experience, RidhiTek offers comprehensive IT consulting and services tailored to address the unique needs of each client.",
+     "OverviewContent3":"Through strategic partnerships and a commitment to excellence, RidhiTek empowers businesses to thrive in the digital age, unlocking their full potential and ensuring lasting success.",
+     "Years":"1 Year",
+     "YService":"Years of Service",
+     "Employees":"Employees",
+     "TClients":"Trusted Clients",
+     "Countries":"Countries"
+     },
+     "// 15 Teams ",
+    {
+     "MEETOUR":"MEET OUR",
+     "Team":"TEAM",
+     "TeamContent":"A diverse ensemble of talent, united in purpose and passion. Together, we're shaping the future with creativity and collaboration. Get acquainted with the driving force behind our success!",
+     "BALA":"BALA M",
+     "Founder":"Founder & Director",
+     "JAGDISH":"JAGDISH",
+     "HeadGlobal":"Director & Head Global Business Development",
+     "DEVA":"DEVA",
+     "DeliveryHead":"Delivery Head – Engineering"
+    },
+    "// 17 Contact Us ",
+    {
+     "TALK":"LET'S TALK",
+     "TALKContent":"Questions, comments, or suggestions? Simply fill in the form and we’ll be in touch shortly.",
+     "sMessage":"Send Message"
+    },
+    "// 19 Locations",
+    {
+    "LOCATIONS":"LOCATIONS",
+    "Branches":"Check Our Branches",
+    "Bng":"BANGALORE",
+    "Hyb":"HYDERABAD",
+    "Bngloc":"18, 3rd Floor, Gamma Block, Sigma Soft Tech Park, Whitefield, Bangalore- 560066",
+    "Hybloc":"-2-1/1/1, 2nd Floor, Mansarovar Building, Srinagar Colony Main Rd, Above SBI, Hyderabad- 500082"
+    },
+    "// 21 Footer",
+    {
+    "Copyrights":"Copyright 2024 | All Rights Reserved by Ridhitek Pvt. Ltd"
+    }
+
+]
+  

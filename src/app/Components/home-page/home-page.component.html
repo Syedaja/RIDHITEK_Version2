@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section class="main">
+<!-- Header -->
+<app-header></app-header>
+  <div class="content" >
+   <div class="text" data-aos="zoom-in">
+     <h2>{{allData[3]?.Molding}}<br>{{allData[3]?.Enterprises}}<br>{{allData[3]?.ThroughTech}} <span>{{allData[3]?.Mastery}}</span></h2>
+     <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+       nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+       volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation </p> -->
+     <h2 class="AtRidhitek">{{allData[3]?.AtRidhitek}}</h2>
+     <!-- <i class="play-btn"><a href="" class="btn ">Get Started</a></i> -->
+     <!-- <div class="getstartanibuttonwhole"><span>{{allData[3]?.GetStarted}}</span><a href="#" (click)="scrollToServices()" class="bdr-ripple-ani-btn pink two"><i class="fa-solid fa-play"></i></a></div> -->
+   </div>
+   <div class="text active">
+    <h2>{{allData[3]?.Financial}}<br>{{allData[3]?.Sector}}<br><span>{{allData[3]?.Mastery}}</span></h2>
+    <p>{{allData[3]?.FinancialContent}}</p>
+      <h2 class="AtRidhitek">{{allData[3]?.AtRidhitek}}</h2>
+      <!-- <a href="" class="btn">Get Started</a> -->
+      <!-- <div class="getstartanibuttonwhole"><span>{{allData[3]?.GetStarted}}</span><a href="#" (click)="scrollToServices()" class="bdr-ripple-ani-btn pink two"><i class="fa-solid fa-play"></i></a></div> -->
+  </div>
+  <div class="text">
+    <h2>{{allData[3]?.UPIRelated}}<br><span>{{allData[3]?.Pay}}</span></h2>
+    <p>{{allData[3]?.UPIRelatedContent}}</p>
+      <h2 class="AtRidhitek">{{allData[3]?.AtRidhitek}}</h2>
+      <!-- <a href="" class="btn">Get Started</a> -->
+      <!-- <div class="getstartanibuttonwhole"><span>{{allData[3]?.GetStarted}}</span><a href="#" (click)="scrollToServices()" class="bdr-ripple-ani-btn pink two"><i class="fa-solid fa-play"></i></a></div> -->
+  </div>
+   <div class="slider">
+     <div class="slides active">
+       <img src="../../../../assets/images/Hero image 1.png" alt="Molding Enterprises">
+       <!-- "https://s3-alpha-sig.figma.com/img/64e0/7970/d6e5fa240c8256ca3d0fd1a590a931f0?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JkQAGPLvgQaH8dkeBu-QfC4Kf6aPAAy0Moi5tgzbhEle4wJkQ40gkHxOPqvYmnc9joWWuLh5hyb4pXbTmaVddd7gHiptn-uwZbyGEIvyaEOBdxIYyobfF8mZOhBeeXKICPXcoljN6DhU5fkQjMWsnpQkQ~XZ-9UOyC0jCyNErMEmHtAdfgRWEWX7A1DKLOwIDWES~41NkBKP80SFeXmz2PypKb2Rs3SbIBvYGIvYBNfMuX~YK46CEbZWA5cFjVTcx~WX4n8EMZXAc~ILldwcPxJkx2fahTZtnKUSYYj7Y6FzpLlO5VsjmoWtGrYA9x6WuuodaWel4co4wm3DGx-fqA__" -->
+     </div>
+     <div class="slides">
+       <img  src="../../../../assets/images/Hero image 2.png" alt="Financial Sector" width="100%">
+     </div>
+     <div class="slides">
+       <img src="../../../../assets/images/Hero image 3.png" alt="UPI Related" width="100%" style="top: 20px;">
+     </div>
+  </div>
+  </div>
+  <div class="footer">
+   
+    <!-- <div class="preNext">
+      <p>Click Here</p>
+      <span class="prev"  (click)="prevSlide()"><i class="fa-solid fa-angle-left"></i></span>
+      <span class="next" (click)="nextSlide()"><i class="fa-solid fa-angle-right"></i></span>
+    </div> -->
+    <div class="preNext">
+      <button class="roundBtn" [class.active]="i === 0" (click)="goToSlide(0)"></button>
+      <button class="roundBtn" [class.active]="i === 1" (click)="goToSlide(1)"></button>
+      <button class="roundBtn" [class.active]="i === 2" (click)="goToSlide(2)"></button>
+    </div>
+  </div>
+ </section> 
+
+ <section id="servicesSection">
+  <app-domains></app-domains>
+ </section>
+
+ <section>
+ <app-services></app-services>
+ </section>
+
+ <section>
+ <app-specialization></app-specialization>
+ </section>
+
+ <section>
+  <app-footer></app-footer>
+ </section>
+
+ <section>
+  <app-back-to-top></app-back-to-top>
+ </section>

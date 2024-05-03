@@ -1,0 +1,11 @@
+<header>
+    <!-- <a href=""><h2>RIDHI<span>TEK</span></h2></a> -->
+    <img src="../../../../assets/images/RidhitekLogo.png" alt="Logo" class="logo" routerLink="/">
+    <div class="toggle" (click)="ToggleMenu()"></div>
+    <ul class="headernav">
+      <li><a routerLink="/">{{allData[1]?.Home}}</a></li>
+      <li><a routerLink="/services">{{allData[1]?.Services}}</a></li> <!-- (click)="scrollToServices()"-->
+      <li><a routerLink="/about_us">{{allData[1]?.AboutUs}}</a></li>
+      <li><a routerLink="/contact_us">{{allData[1]?.ContactUs}}</a></li>
+    </ul>
+   </header>
