@@ -15,6 +15,7 @@
       "GetStarted":"Get Started",
       "Financial":"Financial",
       "Sector":"Sector",
+      "MaininitialContent":"Empower your enterprise with cutting-edge technology solutions, driving innovation and efficiency to new heights. With tech mastery at the helm, unlock unprecedented opportunities for growth and transformation.",
       "FinancialContent":"Financial Tech Mastery is your gateway to unparalleled expertise in the dynamic realm of fintech. Our platform offers cutting-edge tools and insights crafted by industry leaders, empowering you to navigate the complexities.",
       "UPIRelated":"UPI Related",
       "UPIRelatedContent":"UPI Tech Mastery unlocks the power of Unified Payments Interface (UPI) through unparalleled expertise and innovation. Our platform equips you with advanced tools and insights tailored to navigate the intricacies of UPI technology with ease.",
@@ -32,7 +33,7 @@
        "CoreBankingContent":"Core banking systems manage customer accounts, including savings accounts, current accounts, loans, and other financial products. They maintain detailed records of account balances, transactions."
     },
      "// 7 Our Services",
-    {    "OSer":"Our Services",
+    {    "OSer":"Services",
         "ADev":"Application",
         "FEDevelopment":"Front End ",
         "Development":"Development",

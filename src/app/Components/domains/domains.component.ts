@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ElementRef, ViewChild, AfterViewInit, HostListener } from '@angular/core';
 import { ApplicationDataService } from '../../Services_Component/application-data.service';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-domains',
   templateUrl: './domains.component.html',
   styleUrls: ['./domains.component.css']
 })
-export class DomainsComponent implements OnInit {
-  constructor(private AlldataService: ApplicationDataService) { }
+export class DomainsComponent implements OnInit,AfterViewInit {
+  constructor(private AlldataService: ApplicationDataService,private elementRef: ElementRef) { }
   allData: any[] = [];
 
   ngOnInit(): void {
@@ -42,9 +43,7 @@ export class DomainsComponent implements OnInit {
 
         // Check if the new scroll position exceeds
         // the carousel boundaries
-        if (newScrollLeft <= 0 || newScrollLeft >=
-          carousel.scrollWidth - carousel.offsetWidth) {
-
+        if (newScrollLeft <= 0 || newScrollLeft >= carousel.scrollWidth - carousel.offsetWidth) {
           // If so, prevent further dragging
           isDragging = false;
           return;
@@ -60,39 +59,66 @@ export class DomainsComponent implements OnInit {
       };
 
       const autoPlay = () => {
-        // Return if window is smaller than 800
-        if (window.innerWidth < 800) return;
-
         // Calculate the total width of all cards
         const totalCardWidth = carousel.scrollWidth;
-
-        // Calculate the maximum scroll position
-        const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
-
-        // If the carousel is at the end, stop autoplay
-        if (carousel.scrollLeft >= maxScrollLeft) return;
-
-        // Autoplay the carousel after every 2500ms
-        timeoutId = setTimeout(() =>
-          carousel.scrollLeft += firstCardWidth, 2500);
+      
+        // If the carousel is at the end, reset to the beginning
+        if (carousel.scrollLeft + carousel.offsetWidth >= totalCardWidth) {
+          carousel.scrollLeft = 0;
+          return;
+        }
+      
+        // Autoplay the carousel
+        carousel.scrollLeft += firstCardWidth;
       };
 
       carousel.addEventListener("mousedown", dragStart);
       carousel.addEventListener("mousemove", dragging);
       document.addEventListener("mouseup", dragStop);
-      wrapper.addEventListener("mouseenter", () =>
-        clearTimeout(timeoutId!)); // Use optional chaining
+      wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId!)); // Use optional chaining
       wrapper.addEventListener("mouseleave", autoPlay);
 
-      // Function to scroll to the previous card
-      const scrollToPrevCard = () => {
-        carousel.scrollLeft -= firstCardWidth;
-      };
+   // Function to scroll to the previous card
+const scrollToPrevCard = () => {
+  // Calculate the total width of all cards
+  const totalCardWidth = carousel.scrollWidth;
+  
+  // Calculate the maximum scroll position
+  const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
+  
+  // If the carousel is at the beginning, scroll to the last card
+  if (carousel.scrollLeft <= 0) {
+    carousel.scrollLeft = maxScrollLeft;
+    return;
+  }
 
-      // Function to scroll to the next card
-      const scrollToNextCard = () => {
-        carousel.scrollLeft += firstCardWidth;
-      };
+  // Otherwise, scroll to the previous card
+  carousel.scrollLeft -= firstCardWidth;
+};
+
+// Function to scroll to the next card
+const scrollToNextCard = () => {
+  // Calculate the total width of all cards
+  const totalCardWidth = carousel.scrollWidth;
+  
+  // Calculate the maximum scroll position
+  const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
+  
+  // If the carousel is at the end, reset to the beginning
+  if (carousel.scrollLeft >= maxScrollLeft) {
+    carousel.scrollLeft = 0;
+    return;
+  }
+  
+  // Otherwise, scroll to the next card
+  carousel.scrollLeft += firstCardWidth;
+
+  // If the carousel is at the end after scrolling, loop back to the first card
+  if (carousel.scrollLeft >= maxScrollLeft - firstCardWidth) {
+    carousel.scrollLeft = 0;
+  }
+};
+
 
       // Add event listeners for the arrow buttons to
       // scroll the carousel left and right
@@ -112,6 +138,17 @@ export class DomainsComponent implements OnInit {
   FetchAllData() {
     this.AlldataService.GetallData().subscribe((res: any) => {
       this.allData = res;
+    });
+  }
+  ngAfterViewInit(): void {
+    new Swiper(this.elementRef.nativeElement.querySelector('.mySwiper'), {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true
     });
   }
 }

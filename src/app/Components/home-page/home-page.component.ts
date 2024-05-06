@@ -33,6 +33,7 @@ export class HomePageComponent implements OnInit {
     this.startAutomaticSlide();
     this.animation();
     this.FetchAllData();
+    // this.stopAutomaticSlide();
 
     // Scroll to top on route change
     this.router.events.subscribe(event => {
@@ -92,9 +93,9 @@ export class HomePageComponent implements OnInit {
   }
 
   // Stop automatic sliding
-  stopAutomaticSlide() {
-    clearInterval(this.intervalId);
-  }
+  // stopAutomaticSlide() {
+  //   clearInterval(this.intervalId);
+  // }
 
   // Go to a specific slide
   goToSlide(index: number) {
@@ -103,10 +104,10 @@ export class HomePageComponent implements OnInit {
   }
 
   // Scroll to services section
-  scrollToServices() {
-    const servicesSection = document.getElementById('servicesSection');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+  // scrollToServices() {
+  //   const servicesSection = document.getElementById('servicesSection');
+  //   if (servicesSection) {
+  //     servicesSection.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }
 }
